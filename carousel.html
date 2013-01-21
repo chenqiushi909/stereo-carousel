@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>stereo-carousel图片轮播</title>
+		<link rel="stylesheet" type="text/css" href="./css/carousel.css">
+	</head>
+	<body>
+        <div class="subject-banner">
+            <div class="stereo-ctn">
+                <div class="stereo" id="stereo_carousel">
+                    <div class="stereo-list stereo-list-current">
+                        <div class="stereo-carousel-mask"></div>
+                        <img src="./images/subject-pic-01.jpg" alt="音乐专题1" width="100%" height="100%">
+                    </div>
+                    <div class="stereo-list stereo-list-left">
+                        <div class="stereo-carousel-mask"></div>
+                        <img src="./images/subject-pic-03.jpg" alt="音乐专题2" width="100%" height="100%">
+                    </div>
+                    <div class="stereo-list stereo-list-right">
+                        <div class="stereo-carousel-mask"></div>
+                        <img src="./images/subject-pic-02.jpg" alt="音乐专题3" width="100%" height="100%">
+                    </div>
+                    <ul class="stereo-num">
+                        <li class="stereo-num-current"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <a href="javascript:void(0);" class="stereo-control-left"></a>
+                    <a href="javascript:void(0);" class="stereo-control-right"></a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/jquery-1.3.2.min.js"></script>
+        <script type="text/javascript" src="./js/stereo-carousel.js"></script>
+        <script type="text/javascript">
+            $("#stereo_carousel").stereoCarousel();
+        </script>
+    </body>
+</html>
